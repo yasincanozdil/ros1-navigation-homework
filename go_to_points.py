@@ -22,7 +22,7 @@ if __name__ == '__main__':
     rospy.init_node('go_to_points')
     
     points = [
-        (0.0, 0.0),
+        (0.5, 0.5),
         (1.0, 0.5),
         (-1.0, 0.5),
         (1.0, -0.5),
@@ -34,5 +34,5 @@ if __name__ == '__main__':
         result = go_to_goal(x, y)
         rospy.loginfo(f"Nokta {i+1} sonucu: {result}")
     
-    rospy.loginfo("Tüm noktalara gidildi!")
+    rospy.loginfo("Tum noktalara gidildi!")
 
